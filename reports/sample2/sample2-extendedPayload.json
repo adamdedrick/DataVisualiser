@@ -1,0 +1,79 @@
+{
+  "OrderNumber": "DEMO-2026-001",
+  "Customer": {
+    "Name": "Northwind Workshop",
+    "Email": "orders@example.test"
+  },
+  "AlternativesCollection": [
+    {
+      "DesignsCollection": [
+        {
+          "ItemLinesCollection": [
+            {
+              "Code": "CHAIR-OAK",
+              "Description": "Solid oak dining chair",
+              "QuotationQuantity": 4,
+              "ModelName": "Oak Chair",
+              "Volume": "0.42"
+            },
+            {
+              "Code": "TABLE-OAK",
+              "Description": "Extendable solid oak table",
+              "QuotationQuantity": 1,
+              "ModelName": "Oak Table",
+              "Volume": "0.85"
+            },
+            {
+              "Code": "LAMP-BRASS",
+              "Description": "Brushed brass desk lamp",
+              "QuotationQuantity": 2,
+              "ModelName": "Brass Lamp",
+              "Volume": "0.18"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ItemLinesCollection2": [
+    {
+      "ModelName": "Oak Chair",
+      "ItemLinesCollection": [
+        {
+          "Code": "CHAIR-OAK",
+          "Description": "Solid oak dining chair",
+          "QuotationQuantity": 4,
+          "ModelName": "Oak Chair",
+          "Volume": "0.42"
+        }
+      ],
+      "VolumeTotal": 0.42
+    },
+    {
+      "ModelName": "Oak Table",
+      "ItemLinesCollection": [
+        {
+          "Code": "TABLE-OAK",
+          "Description": "Extendable solid oak table",
+          "QuotationQuantity": 1,
+          "ModelName": "Oak Table",
+          "Volume": "0.85"
+        }
+      ],
+      "VolumeTotal": 0.85
+    },
+    {
+      "ModelName": "Brass Lamp",
+      "ItemLinesCollection": [
+        {
+          "Code": "LAMP-BRASS",
+          "Description": "Brushed brass desk lamp",
+          "QuotationQuantity": 2,
+          "ModelName": "Brass Lamp",
+          "Volume": "0.18"
+        }
+      ],
+      "VolumeTotal": 0.18
+    }
+  ]
+}

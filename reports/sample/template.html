@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{reportname}}</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; color: #222; }
+      h1 { color: #1f4e79; }
+      .section { margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>Sales Summary</h1>
+    <div class="section">
+      <p><strong>test 1</strong> </p>
+ 
+      <p><strong>Report Name:</strong> {{reportname}}</p>
+    </div>
+    <div class="section">
+      <p>This report was generated from a HTML template stored in the reports folder.</p>
+    </div>
+    <div class="section">
+      <h2>Line Items</h2>
+      <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Code</th>
+            <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Description</th>
+            <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#AlternativesCollection}}
+            {{#DesignsCollection}}
+              {{#ItemLinesCollection}}
+                <tr>
+                  <td style="border: 1px solid #ccc; padding: 6px;">{{Code}}</td>
+                  <td style="border: 1px solid #ccc; padding: 6px;">{{Description}}</td>
+                  <td style="border: 1px solid #ccc; padding: 6px;">{{QuotationQuantity}}</td>
+                </tr>
+              {{/ItemLinesCollection}}
+            {{/DesignsCollection}}
+          {{/AlternativesCollection}}
+
+          {{#items}}
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 6px;"></td>
+              <td style="border: 1px solid #ccc; padding: 6px;"><strong>{{name}}:</strong> {{value}}</td>
+              <td style="border: 1px solid #ccc; padding: 6px;"></td>
+            </tr>
+          {{/items}}
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

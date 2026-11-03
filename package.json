@@ -1,0 +1,16 @@
+{
+  "name": "datavisualise",
+  "version": "1.0.0",
+  "description": "Node.js server for generating PDF reports",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "demo:sample-report": "node --test test/demo-sample-report.test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7",
+    "moment": "^2.30.1",
+    "puppeteer": "^24.16.0"
+  }
+}
